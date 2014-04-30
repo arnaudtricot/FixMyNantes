@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>Fixmynantes</servlet-name>
+		<servlet-class>fixmynantes.FixMyNantesServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Home</servlet-name>
+		<servlet-class>fixmynantes.HomeServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ReportProblem</servlet-name>
+		<servlet-class>fixmynantes.ReportProblemServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>MyAlerts</servlet-name>
+		<servlet-class>fixmynantes.MyAlertsServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AllAlerts</servlet-name>
+		<servlet-class>fixmynantes.AllAlertsServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Help</servlet-name>
+		<servlet-class>fixmynantes.HelpServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>MostLiked</servlet-name>
+		<servlet-class>fixmynantes.MostLikedServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Fixmynantes</servlet-name>
+		<url-pattern>/fixmynantes</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Home</servlet-name>
+		<url-pattern>/fixmynantes/home</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ReportProblem</servlet-name>
+		<url-pattern>/fixmynantes/reportproblem</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MyAlerts</servlet-name>
+		<url-pattern>/fixmynantes/myalerts</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AllAlerts</servlet-name>
+		<url-pattern>/fixmynantes/allalerts</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Help</servlet-name>
+		<url-pattern>/fixmynantes/help</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MostLiked</servlet-name>
+		<url-pattern>/fixmynantes/mostliked</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>WEB-INF/index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
